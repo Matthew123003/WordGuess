@@ -15,23 +15,31 @@ public class Hangman {
         Scanner in = new Scanner(System.in);
         System.out.println("Let's play hangman");
         System.out.println("Guess a letter");
-        String name  = in.nextLine();
+        String input  = in.nextLine();
 
         String[] gameWords = {"cat", "dog", "sit", "sun"};
-
-        int maxTries = 3;//max tries in the game
-
-        int userGuess = 0;
 
        Random random = new Random();
        int randomIndex = random.nextInt(gameWords.length);
        String wordsToGuess = gameWords[randomIndex];// Pull words randomly from the array
 
-       while()
+        char[] letters = wordsToGuess.toCharArray();
+        char inputChar = input.charAt(0);
 
+        for(int i = 0; i < letters.length; i++){
+            if(letters[i] == inputChar){
 
             }
         }
+
+        }
+
+
+        }
+
+
+
+
 
 
 
