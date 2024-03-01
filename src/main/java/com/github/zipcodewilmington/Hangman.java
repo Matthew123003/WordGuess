@@ -1,4 +1,6 @@
 package com.github.zipcodewilmington;
+import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -8,16 +10,32 @@ import java.util.Scanner;
  */
 public class Hangman {
 
-    private static final String[] words = {"cat", "dog", "six", "box", "big", "sit"};
-    private static final
+
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
-        System.out.println("Let's play word guess");
+        System.out.println("Let's play hangman");
+        System.out.println("Guess a letter");
+        String name  = in.nextLine();
 
-    }
+        String[] gameWords = {"cat", "dog", "sit", "sun"};
+
+        int maxTries = 3;//max tries in the game
+
+        int userGuess = 0;
+
+       Random random = new Random();
+       int randomIndex = random.nextInt(gameWords.length);
+       String wordsToGuess = gameWords[randomIndex];// Pull words randomly from the array
+
+       while()
+
+
+            }
+        }
 
 
 
 
 
-}
+
+
